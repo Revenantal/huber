@@ -1,0 +1,96 @@
+
+html, body {
+    color:white;
+    font-size:18px;
+    font-family: 'Courgette', cursive;
+}
+
+#map {
+    height: 100%;
+}
+
+.hero {
+    background:black;
+}
+
+.hero video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: 0;
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.hero .container {
+    position: relative;
+    z-index: 2;
+}
+
+.hero .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: 0.8;
+    z-index: 1;
+}
+
+.hero h1 {
+    font-size: 10.5rem;
+}
+
+.h-33 {
+    height: 33.333333333333333333333%!important;
+}
+
+.h-66 {
+    height: 66.66666666666666666666%!important;
+}
+
+.horse-top:before {
+    content: " ";
+    background: url(/img/horse-white.png);
+    background-size: contain;
+    width: 100%;
+    background-repeat: no-repeat;
+    height: 100px;
+    background-position: center;
+    display: inline-block;
+    position: absolute;
+    margin-top: -80px;
+    position: fixed;
+    left: 0;
+}
+
+.floating-alert {
+    position: absolute;
+    top: 0;
+}
+
+@media (max-width:768px) {
+    .hero h1 {
+        font-size: 5.5rem;
+    }
+
+    .horse-top:before {
+        display:none;
+    }
+
+    .h2, h2 {
+        font-size:1.5rem;
+    }
+
+
+    html, body {
+        font-size:16px;
+    }
+}
